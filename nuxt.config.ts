@@ -10,6 +10,19 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    '@nuxt/icon'
-  ]
+      '@nuxt/icon',
+      [
+        '@nuxtjs/robots',
+        {
+          UserAgent: '*',
+          Disallow: '',
+          Sitemap: 'https://www.itgenius.co.th/sitemap.xml'
+        }
+      ]
+  ],
+  runtimeConfig: {
+    public: {
+      wpUrlAPI: process.env.WP_URL_API || 'https://www.itgenius.co.th/sandbox_api/flutter_news_api',
+    }
+  }
 })

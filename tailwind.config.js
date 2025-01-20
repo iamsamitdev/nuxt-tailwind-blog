@@ -13,7 +13,7 @@ export default {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["light"], // เลือกธีมที่ต้องการใช้
+    themes: ["winter"], // เลือกธีมที่ต้องการใช้ ได้แก่ light, dark, cupcake, cyberpunk, dracula, forest, halloween, aqua, sky, winter, synthwave, neon, luxe, emerald, corporate
   }
 }
 
